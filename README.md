@@ -1,12 +1,12 @@
 # simple_vsftpd
 [![Cookbook Version](https://img.shields.io/cookbook/v/simple_vsftpd.svg)](https://supermarket.chef.io/cookbooks/simple_vsftpd)
-[![Build Status](https://secure.travis-ci.org/parallels-cookbooks/simple_vsftpd.png?branch=master)](http://travis-ci.org/parallels-cookbooks/simple_vsftpd)
+[![Build Status](https://secure.travis-ci.org/parallels-cookbooks/vsftpd.png?branch=master)](http://travis-ci.org/parallels-cookbooks/vsftpd)
 
 ## Description
 Chef cookbook to install and configure simple_vsftpd server/client.
 
 ## Repository
-https://github.com/parallels-cookbooks/simple_vsftpd
+https://github.com/parallels-cookbooks/vsftpd
 
 ## Chef Super Market
 https://supermarket.chef.io/cookbooks/simple_vsftpd
