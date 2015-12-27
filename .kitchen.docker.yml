@@ -1,0 +1,35 @@
+settings:
+  parallel: true
+
+driver:
+  name: docker
+
+platforms:
+- name: centos-6
+  driver:
+    image: centos:6
+    platform: rhel
+
+- name: debian-7
+  driver:
+    image: debian:7
+    platform: debian
+    provision_command:
+      - /usr/bin/apt-get update
+      - /usr/bin/apt-get install -y net-tools
+
+- name: ubuntu-14.04
+  driver:
+    image: ubuntu:14.04
+    platform: ubuntu-upstart
+    provision_command:
+      - /usr/bin/apt-get update
+      - /usr/bin/apt-get install -y net-tools
+
+provisioner:
+  name: chef_zero
+
+suites:
+  - name: default
+    run_list:
+      - recipe[simple_vsftpd::default]
