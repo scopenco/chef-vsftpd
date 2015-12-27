@@ -1,5 +1,5 @@
 #
-# Cookbook Name:: simple_vsftpd
+# Cookbook Name:: vsftpd
 # Attributes:: default
 #
 # Copyright 2015 Andrei Skopenko
@@ -19,12 +19,12 @@
 # platform specific options
 case node['platform_family']
 when 'debian'
-  default['simple_vsftpd']['conf_dir'] = '/etc'
+  default['vsftpd']['conf_dir'] = '/etc'
 when 'rhel', 'fedora'
-  default['simple_vsftpd']['conf_dir'] = '/etc/vsftpd'
+  default['vsftpd']['conf_dir'] = '/etc/vsftpd'
 end
 
-default['simple_vsftpd']['config'] = {
+default['vsftpd']['config'] = {
   'anonymous_enable' => 'YES',
   'local_enable' => 'YES',
   'write_enable' => 'YES',

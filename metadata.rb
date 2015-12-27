@@ -1,4 +1,4 @@
-name             'simple_vsftpd'
+name             'vsftpd'
 maintainer       'Andrei Skopenko'
 maintainer_email 'andrey@skopenko.net'
 license          'Apache 2.0'
@@ -16,4 +16,4 @@ supports 'ubuntu'
 
 depends 'yum-epel'
 
-recipe 'simple_vsftpd::default', 'Install and configure VsFTPD daemon'
+recipe 'vsftpd::default', 'Install and configure VsFTPD daemon'

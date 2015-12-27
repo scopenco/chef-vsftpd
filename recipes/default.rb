@@ -26,8 +26,8 @@ end
 
 package 'vsftpd'
 
-template File.join(node['simple_vsftpd']['conf_dir'], 'vsftpd.conf') do
-  variables options: node['simple_vsftpd']['config']
+template File.join(node['vsftpd']['conf_dir'], 'vsftpd.conf') do
+  variables options: node['vsftpd']['config']
   owner 'root'
   group 'root'
   mode '0400'

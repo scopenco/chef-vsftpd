@@ -32,4 +32,4 @@ provisioner:
 suites:
   - name: default
     run_list:
-      - recipe[simple_vsftpd::default]
+      - recipe[vsftpd::default]
