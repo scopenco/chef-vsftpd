@@ -20,8 +20,8 @@ platforms:
 
 - name: ubuntu-14.04
   driver:
-    image: ubuntu:14.04
-    platform: ubuntu-upstart
+    image: ubuntu-upstart:14.04
+    platform: ubuntu
     provision_command:
       - /usr/bin/apt-get update
       - /usr/bin/apt-get install -y net-tools
