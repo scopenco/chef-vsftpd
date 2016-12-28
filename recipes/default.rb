@@ -18,7 +18,7 @@
 #
 
 # need init script before package setup https://bugs.launchpad.net/ubuntu/+source/vsftpd/+bug/815528
-if node['platform'] == 'ubuntu'
+if node['platform'] == 'ubuntu' && node['platform_version'].to_i < 16
   cookbook_file '/etc/init.d/vsftpd' do
     mode '0750'
   end
