@@ -9,7 +9,7 @@ AllCops:
 
 LineLength:
   Enabled: false
-SingleSpaceBeforeFirstArg:
+Style/SpaceBeforeFirstArg:
   Exclude:
     - '**/metadata.rb'
 HashSyntax:
