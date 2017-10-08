@@ -36,5 +36,5 @@ default['vsftpd']['config'] = {
   'listen' => 'YES',
   'pam_service_name' => 'vsftpd',
   'userlist_enable' => 'YES',
-  'tcp_wrappers' => 'YES'
+  'tcp_wrappers' => 'YES',
 }
