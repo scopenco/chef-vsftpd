@@ -34,6 +34,6 @@ template File.join(node['vsftpd']['conf_dir'], 'vsftpd.conf') do
 end
 
 service 'vsftpd' do
-  supports :status => true, :reload => true, :restart => true
+  supports status: true, reload: true, restart: true
   action [:enable, :start]
 end
