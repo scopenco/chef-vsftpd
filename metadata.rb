@@ -6,7 +6,7 @@ description      'Installs/Configures VsFTPD daemon'
 long_description IO.read(File.join(File.dirname(__FILE__), 'README.md'))
 source_url 'https://github.com/scopenco/chef-vsftpd'
 issues_url 'https://github.com/scopenco/chef-vsftpd/issues'
-version '0.1.2'
+version '0.1.3'
 
 supports 'amazon'
 supports 'redhat'
