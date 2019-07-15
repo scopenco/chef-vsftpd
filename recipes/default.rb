@@ -31,6 +31,7 @@ template File.join(node['vsftpd']['conf_dir'], 'vsftpd.conf') do
   owner 'root'
   group 'root'
   mode '0400'
+  notifies :restart, 'service[vsftpd]', :delayed
 end
 
 service 'vsftpd' do
