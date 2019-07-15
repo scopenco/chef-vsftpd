@@ -16,5 +16,5 @@ end
 
 group :kitchen do
   gem 'chef-dk', '~> 1.3.43'
-  gem 'test-kitchen', '~> 1.16.0'
+  gem 'test-kitchen'
 end

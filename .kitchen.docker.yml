@@ -28,6 +28,7 @@ platforms:
 
 provisioner:
   name: chef_zero
+  chef_license: accept
 
 suites:
   - name: default
